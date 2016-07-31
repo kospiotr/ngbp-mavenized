@@ -17,7 +17,7 @@
     <build>
         <resources>
             <resource>
-                <directory>${basedir}/src/main/js/build</directory>
+                <directory>${basedir}/build</directory>
             </resource>
         </resources>
         <plugins>
@@ -26,7 +26,6 @@
                 <artifactId>frontend-maven-plugin</artifactId>
                 <version>0.0.29</version>
                 <configuration>
-                    <workingDirectory>src/main/js</workingDirectory>
                     <nodeVersion>${node.version}</nodeVersion>
                     <npmVersion>${npm.version}</npmVersion>
                 </configuration>
@@ -75,9 +74,6 @@
                         <groupId>com.github.eirslett</groupId>
                         <artifactId>frontend-maven-plugin</artifactId>
                         <version>0.0.29</version>
-                        <configuration>
-                            <workingDirectory>src/main/js</workingDirectory>
-                        </configuration>
                         <executions>
                             <execution>
                                 <id>grunt dev</id>
@@ -103,9 +99,6 @@
                         <groupId>com.github.eirslett</groupId>
                         <artifactId>frontend-maven-plugin</artifactId>
                         <version>0.0.29</version>
-                        <configuration>
-                            <workingDirectory>src/main/js</workingDirectory>
-                        </configuration>
                         <executions>
                             <execution>
                                 <id>grunt prod</id>
