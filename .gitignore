@@ -1,6 +1,6 @@
 /node
 *.sw*
-*.iml
+*iml
 *~
 build/
 bin/
